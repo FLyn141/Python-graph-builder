@@ -14,7 +14,7 @@ def function_value_list(start_val, step_val, stop_val):
 while True:
     function = ''
     while function == '':
-        function = input('Input your function')
+        function = input('Input your function:')
         if function == '':
             print('Function can not be empty')
 
