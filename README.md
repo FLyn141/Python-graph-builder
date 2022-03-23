@@ -1,2 +1,2 @@
 # Python-graph-builder
-Python program which provides you the ability to draw graphics of math functions. 
+Python program which allows you to draw graphics of math functions. 
