@@ -21,8 +21,8 @@ while True:
     start, stop = -50, 50
     interval = '0'
     while interval == '0':
-        interval = input('The default rendering interval is [-50;50]. Press ENTER if this value suits you. \
-If not, enter the interval value manually:')
+        interval = input('The default rendering interval is [-50;50]. Press ENTER if this value suits you. If not, \
+enter the interval value manually:')
         if interval == '0':
             print('Rendering Interval can not be empty')
     if interval != '':
@@ -32,8 +32,8 @@ If not, enter the interval value manually:')
     step = 0.01
     string_step = '0'
     while string_step == '0':
-        string_step = input('Function step by default == 0.01. Press ENTER if this value suits you. If not \
-- enter the step value manually:')
+        string_step = input('Function step by default == 0.01. Press ENTER if this value suits you. If not - enter the\
+step value manually:')
         if string_step == '0':
             print('Function step can not be empty')
     if string_step != '':
