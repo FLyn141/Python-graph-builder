@@ -14,17 +14,17 @@ def function_value_list(start_val, step_val, stop_val):
 while True:
     function = ''
     while function == '':
-        function = input('Введите желаемую функцию:')
+        function = input('Input your function')
         if function == '':
-            print('Функция не может не иметь аргументов')
+            print('Function can not be empty')
 
     start, stop = -50, 50
     interval = '0'
     while interval == '0':
-        interval = input('Интервал отрисовки по умолчанию [-50;50]. Нажмите ENTER, если такое значение вас устраивает. \
-Если нет - введите значение интервала вручную:')
+        interval = input('The default rendering interval is [-50;50]. Press ENTER if this value suits you. \
+If not, enter the interval value manually:')
         if interval == '0':
-            print('Интервал отрисовки не может быть пустым')
+            print('Rendering Interval can not be empty')
     if interval != '':
         interval_range_list = [-int(interval), int(interval)]
         start, stop = min(interval_range_list), max(interval_range_list)
@@ -32,10 +32,10 @@ while True:
     step = 0.01
     string_step = '0'
     while string_step == '0':
-        string_step = input('Шаг ф-и по умолчанию == 0.01. Нажмите ENTER, если такое значение вас устраивает. Если нет \
-- введите значение шага вручную:')
+        string_step = input('Function step by default == 0.01. Press ENTER if this value suits you. If not \
+- enter the step value manually:')
         if string_step == '0':
-            print('Шаг функции не может быть равен нулю')
+            print('Function step can not be empty')
     if string_step != '':
         step = float(string_step)
 
